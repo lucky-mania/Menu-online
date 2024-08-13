@@ -110,7 +110,7 @@
     #itensCardapio {
         display: flex;
         flex-direction: column!important;
-        width: 800px!important;
+        width: 700px!important;
         justify-content: center;
         text-align: center;
         padding: 10px;
