@@ -91,9 +91,13 @@
     .title {
         font-size: 30px;
     }
-
+/*alterando*/
     .servicos {
-        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 500px!important;
     }
 
     .cardapio {
