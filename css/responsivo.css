@@ -91,15 +91,16 @@
     .title {
         font-size: 30px;
     }
-/*alterando*/
-    .servicos {
+/*alterando
+
+.servicos {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         width: 500px!important;
-    }
-
+    }*/
+    
     .cardapio {
         padding-bottom: 50px;
     }
