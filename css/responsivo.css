@@ -99,9 +99,7 @@
     top: 184px!important;
     z-index: 9999;
 }
-/*alterando
-*/
-
+/*alterando*/
 .servicos {
     padding-bottom: 50px!important;
 }
@@ -120,7 +118,7 @@
     #itensCardapio {
         display: flex;
         flex-direction: column!important;
-        width: 400px!important;
+        width: 380px!important;
         justify-content: center;
         text-align: center;
         padding: 10px;
