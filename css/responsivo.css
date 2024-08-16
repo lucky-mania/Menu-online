@@ -99,11 +99,12 @@
     top: 184px!important;
     z-index: 9999;
 }
-/*alterando*/
+/*alterando
+*/
 
-    .servicos {
-        width: 430px!important;
-    }
+.servicos {
+    padding-bottom: 50px!important;
+}
     
     .cardapio {
         padding-bottom: 50px;
