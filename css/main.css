@@ -262,6 +262,10 @@ a.navbar-brand {
 .container{
     text-align: justify!important;
 }
+.card-text{
+    text-align: justify;
+    text-align: center;
+}
 .servicos{
     padding:100px;
     padding-bottom: 150px;
