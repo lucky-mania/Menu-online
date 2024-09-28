@@ -259,9 +259,6 @@ a.navbar-brand {
     height: 500px;
     background-image:url(../img/bg-icons-2.png);
 }
-.container{
-    text-align: justify!important;
-}
 .card-text{
     text-align: justify;
     text-align: center;
