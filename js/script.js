@@ -10,7 +10,7 @@ var MEU_ENDERECO = null;
 var VALOR_CARRINHO = 0;
 var VALOR_ENTREGA = 7.5;
 
-var CELULAR_EMPRESA = '';
+var CELULAR_EMPRESA = '988784546';
 
 cardapio.eventos = {
 
@@ -432,7 +432,7 @@ cardapio.metodos = {
         }
 
         if (uf == "-1") {
-            cardapio.metodos.mensagem('Informe a UF, por favor.');
+            cardapio.metodos.mensagem('Informe o meio de pagamento, por favor.');
             $("#ddlUf").focus();
             return;
         }
@@ -475,7 +475,7 @@ cardapio.metodos = {
         });
 
         $("#resumoEndereco").html(`${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`);
-        $("#cidadeEndereco").html(`${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`);
+        $("#cidadeEndereco").html(`${MEU_ENDERECO.cidade}/ ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}</br><strong>forma de pagamento:<strong> ${MEU_ENDERECO.uf}`);
 
         cardapio.metodos.finalizarPedido();
 
@@ -490,7 +490,8 @@ cardapio.metodos = {
             texto += `\n*Itens do pedido:*\n\n\${itens}`;
             texto += '\n*Endereço de entrega:*';
             texto += `\n${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
-            texto += `\n${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
+            texto += `\n${MEU_ENDERECO.cidade} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
+            texto += `\n <strong>forma de pagamento:<strong> ${MEU_ENDERECO.uf}`;
             texto += `\n\n*Total (com entrega): R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}*`;
 
             var itens = '';
