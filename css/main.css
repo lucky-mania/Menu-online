@@ -256,12 +256,12 @@ a.navbar-brand {
     position:absolute;
     left: 0;
     right: 0;
-    height: 700px;
+    height: 500px;
     background-image:url(../img/bg-icons-2.png);
 }
 .card-text{
     text-align: justify!important;
-}
+    text-align: center!important;}
 .servicos{
     padding:100px;
     padding-bottom: 150px;
